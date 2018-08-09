@@ -10,6 +10,7 @@ class ResBlock(nn.Module):
                                stride=1)
 
 
+
         if stride != 1 or num_inputs != num_outputs:
             self.downsample = nn.Sequential(
                 nn.Conv2d(num_inputs, num_outputs,
